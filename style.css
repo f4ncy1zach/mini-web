@@ -164,3 +164,34 @@ footer {
 .project-card a:hover {
     background: #005bb5;
 }
+
+/* ✅ 经验页面样式 */
+.experience {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.exp-section {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.exp-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.exp-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.exp-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}

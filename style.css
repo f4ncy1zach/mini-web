@@ -12,38 +12,26 @@ body {
 }
 
 
-header {
-    background: black;
-    color: white;
+.header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
     padding: 15px;
-    text-align: center;
+    background: black;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.logo img {
+    height: 40px; 
+    width: auto;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.social-icons img {
+    height: 30px; 
+    transition: transform 0.2s ease-in-out;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-
-hr {
-    margin: 30px auto;
-    width: 60%;
-    border: 1px solid #ccc;
+.social-icons img:hover {
+    transform: scale(1.1); 
 }
 
 .hero {
@@ -59,6 +47,39 @@ hr {
 .hero p {
     font-size: 18px;
     color: #666;
+    margin-bottom: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    padding: 12px 24px;
+    color: white;
+    background-color: #0071e3;
+    text-decoration: none;
+    border-radius: 10px; 
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons a:hover {
+    background-color: #005bb5;
+    transform: translateY(-3px); 
+}
+
+hr {
+    margin: 30px auto;
+    width: 60%;
+    border: 1px solid #ccc;
 }
 
 .about {
@@ -69,7 +90,7 @@ hr {
 .profile-photo {
     display: block;
     width: 100%;
-    max-width: 350px; 
+    max-width: 350px;
     height: auto;
     margin: 20px auto;
     border-radius: 10px;
@@ -84,12 +105,13 @@ hr {
 .github-profile img {
     display: block;
     width: 100%;
-    max-width: 800px; 
+    max-width: 800px;
     height: auto;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .projects {
     text-align: center;
@@ -109,7 +131,7 @@ hr {
 }
 
 .project-card {
-    width: 400px; 
+    width: 400px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -183,3 +205,4 @@ footer {
     color: white;
     padding: 10px;
 }
+
